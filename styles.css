@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif; 
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    direction: ltr;
+}
+
+/* تصميم القسم العلوي */
+.hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 5px solid rgb(21, 21, 24);
+
+}
+
+/* صورة الخلفية */
+.background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.title {
+    font-size: 3rem;
+    color: white;
+    position: absolute;
+    top: 30%; 
+    z-index: 2;
+}
+.soup-container {
+    position: absolute;
+    bottom: -50px;
+    z-index: 1;
+}
+
+.soup {
+    width: 220px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.soup:hover {
+    transform: rotate(180deg);
+}
+
+.content {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: justify;
+   font-weight: bold;
+}
+
+.details-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.details-image img {
+    width: 100%;
+    max-width: 300px;
+}
+.ingredients-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+   border-top: 1px solid #171515;
+    text-align: left;
+
+}
+
+.ingredients-title {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f4e1b9;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    
+}
+
+.ingredients-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.ingredients-list li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.details1-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.details1-image img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.Directions-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+
+}
+
+.Directions-title {
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #f4e1b9;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.Directions-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
